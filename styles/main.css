@@ -1,0 +1,79 @@
+#main-content {
+  border: 1px solid black;
+  border-color: #dfdbdb;
+  border-radius: 15px;
+  height: 500px;
+  margin: 200px auto;
+  width: 70%;
+}
+#headingToDo {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+.glyphicon {
+  cursor: pointer;
+}
+.input-area {
+  border-bottom: 1px solid black;
+  height: 50px;
+}
+.display-area {
+  height: 360px;
+}
+.controls-area {
+  padding: 0 15px;
+  font-weight: bold;
+  font-style: italic;
+}
+#sortPriority {
+  float: left;
+}
+#sortTimestamp {
+  float: right;
+}
+#addToDo {
+  top: 10px;
+}
+.glyphicon-remove-sign {
+  top: 15px;
+}
+.priority-High {
+  background-color: #a70a0a;
+  border: 1px solid #a70a0a;
+}
+.priority-Medium {
+  background-color: #2a7777;
+  border: 1px solid #2a7777;
+}
+.priority-Low {
+  background-color: #008000;
+  border: 1px solid #008000;
+}
+.to-do-list {
+  border-radius: 5px;
+  color: white;
+  height: 40px;
+  margin-bottom: 5px;
+  list-style: none;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  position: relative;
+}
+.to-do-list .detailed-list {
+  background-color: black;
+  border-radius: 6px;
+  color: #fff;
+  left: 101%;
+  padding: 5px 0;
+  position: absolute;
+  text-align: center;
+  top: -5px;
+  visibility: hidden;
+  width: 250px;
+  z-index: 1;
+}
+.to-do-list:hover .detailed-list {
+  visibility: visible;
+}

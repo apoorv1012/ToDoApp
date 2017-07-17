@@ -1,0 +1,83 @@
+// MIXINS
+.priority-styling(@styleColor) {
+    background-color: @styleColor;
+    border: 1px solid @styleColor;
+}
+#main-content {
+    border: 1px solid black;
+    border-color: #dfdbdb;
+    border-radius: 15px;
+    height: 500px;
+    margin: 200px auto;
+    width: 70%;
+}
+#headingToDo {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+.glyphicon {
+    cursor: pointer;
+}
+.input-area {
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+.display-area {
+    height: 360px;
+}
+.controls-area {
+    padding: 0 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+#sortPriority {
+    float: left;
+}
+#sortTimestamp {
+    float: right;
+}
+#addToDo {
+    top: 10px;
+}
+.glyphicon-remove-sign {
+    top: 15px;
+}
+.priority-High {
+    .priority-styling(#a70a0a);
+}
+.priority-Medium {
+    .priority-styling(#2a7777);
+}
+.priority-Low {
+    .priority-styling(#008000);
+}
+.to-do-list {
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    margin-bottom: 5px;
+    list-style: none;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    position: relative;
+    .detailed-list {    
+        background-color: black;
+        border-radius: 6px;
+        color: #fff;
+        left: 101%;
+        padding: 5px 0;
+        position: absolute;
+        text-align: center;
+        top: -5px;
+        visibility: hidden;
+        width: 250px;    
+        z-index: 1; 
+    }
+    &:hover {
+        .detailed-list {
+            visibility: visible;
+        }
+    }
+}
